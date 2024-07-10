@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form {
+    background-color: #ff9900;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 429px;
+    box-shadow: 0 0 2 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+input {
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.button {
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.button:hover {
+    background-color: #000;
+    padding: 15px 30px; 
+
+}
+.contrast {
+    position: absolute; 
+    top: 10px;          
+    right: 10px;        
+    padding: 10px 20px; 
+    color: #222;         
+    border: none;        
+    border-radius: 5px;  
+    cursor: pointer;    
+    transition: all 0.3s ease;
+  }
+  
+.contrast:hover {
+    background-color: #ff9900; 
+    padding: 10px 40px; 
+  }
+  h1{
+    text-align: center;
+
+  }
+
+  /*CAMBIAR CONTRASTE*/
+
+  body.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+.high-contrast .container {
+    background-color: #000;
+    border: 2px  #fff;
+    box-shadow: none;
+}
+
+.high-contrast h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.high-contrast label {
+    color: #000;
+}
+
+.high-contrast input, .high-contrast select {
+    background-color: #000;
+    color: #fff;
+    border: 2px #fff;
+}
+
+.high-contrast button[type="submit"] {
+    background-color: #fff;
+    color: #000;
+    
+}
+
+.high-contrast button[type="submit"]:hover {
+    background-color: #064125;
+}
+
+.high-contrast #contrast {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.high-contrast #contrast:hover {
+    background-color: #ff9900;
+}
